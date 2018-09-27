@@ -894,7 +894,7 @@ public class DiffPatchMatch {
     /**
      * Look for single edits surrounded on both sides by equalities
      * which can be shifted sideways to align the edit to a word boundary.
-     * e.g: The c&lt;ins&gt;at c&lt;/ins&gt;ame. -> The &lt;ins&gt;cat &lt;/ins&gt;came.
+     * e.g: The c&lt;ins&gt;at c&lt;/ins&gt;ame. -&gt; The &lt;ins&gt;cat &lt;/ins&gt;came.
      * @param diffs LinkedList of Diff objects.
      */
     public void diff_cleanupSemanticLossless(LinkedList<Diff> diffs) {
