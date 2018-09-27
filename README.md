@@ -1,4 +1,6 @@
 [![Build Status](https://travis-ci.org/brettwooldridge/kuill.svg?branch=master)](https://travis-ci.org/brettwooldridge/kuill)
+[![][license img]][license]
+[![][Maven Central img]][Maven Central]
 
 # kuill
 
@@ -8,3 +10,11 @@ on Google's GSON library was replaced with the more common Jackson JSON library,
 This library should work for both Kotlin and Java users, with the caveat that Java users will need the Kotlin runtime jar in order to run.
 
 This library provides a Model representation of the [Quill](https://quilljs.com) editor ["Delta"](https://quilljs.com/docs/delta/) document model, as well as methods and operatators required to read and manipulate the model.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+[license]:LICENSE
+[license img]:https://img.shields.io/badge/license-Apache%202-blue.svg
+
+[Maven Central]:https://maven-badges.herokuapp.com/maven-central/com.zaxxer/kuill
+[Maven Central img]:https://maven-badges.herokuapp.com/maven-central/com.zaxxer/kuill/badge.svg
