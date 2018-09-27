@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/brettwooldridge/kuill.svg?branch=master)](https://travis-ci.org/brettwooldridge/kuill)
+
 # kuill
 
 This project uses code originally from the [android-quill-delta](https://github.com/volser/android-quill-delta) project.  The dependency
