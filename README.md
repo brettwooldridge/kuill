@@ -7,4 +7,4 @@ on Google's GSON library was replaced with the more common Jackson JSON library,
 
 This library should work for both Kotlin and Java users, with the caveat that Java users will need the Kotlin runtime jar in order to run.
 
-This library provides model representation of the [Quill](https://quilljs.com) editor document model, as well as methods and operatators required to read and manipulate the model.
+This library provides a Model representation of the [Quill](https://quilljs.com) editor ["Delta"](https://quilljs.com/docs/delta/) document model, as well as methods and operatators required to read and manipulate the model.
