@@ -130,30 +130,31 @@
 
     <profiles>
         <profile>
-            <id>bintray</id>
+            <id>release-sign-artifacts</id>
             <activation>
-                <activeByDefault>true</activeByDefault>
+                <property>
+                    <name>performRelease</name>
+                    <value>true</value>
+                </property>
             </activation>
-            <repositories>
-                <repository>
-                    <snapshots>
-                        <enabled>false</enabled>
-                    </snapshots>
-                    <id>bintray-kotlin-kotlinx</id>
-                    <name>bintray</name>
-                    <url>https://kotlin.bintray.com/kotlinx</url>
-                </repository>
-            </repositories>
-            <pluginRepositories>
-                <pluginRepository>
-                    <snapshots>
-                        <enabled>false</enabled>
-                    </snapshots>
-                    <id>bintray-kotlin-kotlinx</id>
-                    <name>bintray-plugins</name>
-                    <url>https://kotlin.bintray.com/kotlinx</url>
-                </pluginRepository>
-            </pluginRepositories>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-gpg-plugin</artifactId>
+                        <version>1.6</version>
+                        <executions>
+                            <execution>
+                                <id>sign-artifacts</id>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>sign</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
         </profile>
     </profiles>
 </project>
