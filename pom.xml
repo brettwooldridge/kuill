@@ -45,10 +45,6 @@
         <version>9</version>
     </parent>
 
-    <prerequisites>
-        <maven>3.3.9</maven>
-    </prerequisites>
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <kotlin.version>1.2.70</kotlin.version>
